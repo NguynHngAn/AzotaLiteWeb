@@ -1,0 +1,25 @@
+﻿@model AzotaLite.Web.Models.Classroom
+<h2>@Model.Name (@Model.Grade)</h2>
+<p class="text-success">@TempData["Msg"]</p>
+
+<p>
+    <a asp-controller="Students" asp-action="Create" asp-route-classroomId="@Model.Id" class="btn btn-primary">Thêm học sinh</a>
+    <a asp-action="Index" class="btn btn-outline-secondary ms-2">Về danh sách lớp</a>
+</p>
+
+<table class="table table-bordered">
+    <thead><tr><th>Họ tên</th><th>Email</th><th style="width:160px"></th></tr></thead>
+    <tbody>
+        @foreach (var s in Model.Students.OrderBy(x => x.FullName))
+        {
+            <tr>
+                <td>@s.FullName</td>
+                <td>@s.Email</td>
+                <td class="text-end">
+                    <a asp-controller="Students" asp-action="Edit" asp-route-id="@s.Id" class="btn btn-sm btn-warning">Sửa</a>
+                    <a asp-controller="Students" asp-action="Delete" asp-route-id="@s.Id" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

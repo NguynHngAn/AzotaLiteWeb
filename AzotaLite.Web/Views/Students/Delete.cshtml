@@ -1,0 +1,6 @@
+﻿@model AzotaLite.Web.Models.Student
+<h3>Xóa học sinh: @Model.FullName</h3>
+<form asp-action="Delete" method="post">
+    <button class="btn btn-danger">Xóa</button>
+    <a asp-controller="Classrooms" asp-action="Details" asp-route-id="@Model.ClassroomId" class="btn btn-outline-secondary ms-2">Hủy</a>
+</form>

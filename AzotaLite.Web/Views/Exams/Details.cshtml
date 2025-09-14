@@ -1,0 +1,26 @@
+﻿@model AzotaLite.Web.Models.Exam
+@{
+    ViewData["Title"] = "Chi tiết đề";
+    bool isOwner = (bool)(ViewBag.IsOwner ?? false);
+}
+<h2>@Model.Title</h2>
+<div class="mb-2">Môn: <strong>@Model.Subject</strong></div>
+<div class="mb-2">Thời lượng: <strong>@Model.DurationMinutes'</strong></div>
+<div class="mb-2">Kích thước: <strong>@(Math.Round(Model.FileSize / 1024.0, 1)) KB</strong></div>
+<div class="mb-2">Tải lên bởi: <strong>@Model.OwnerTeacher.Email</strong></div>
+
+@if (isOwner)
+{
+    <a asp-action="Download" asp-route-id="@Model.Id" class="btn btn-secondary">Tải file</a>
+}
+<a asp-action="Index" class="btn btn-outline-secondary ms-2">Về danh sách</a>
+
+
+@if (User.IsInRole("Student"))
+{
+    <form asp-controller="Submissions" asp-action="Start" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="examId" value="@Model.Id" />
+        <button class="btn btn-primary">Bắt đầu làm bài</button>
+    </form>
+}

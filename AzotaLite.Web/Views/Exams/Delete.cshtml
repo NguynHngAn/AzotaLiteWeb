@@ -1,0 +1,6 @@
+﻿@model AzotaLite.Web.Models.Exam
+<h3>Bạn chắc chắn muốn xóa đề: @Model.Title?</h3>
+<form asp-action="Delete" method="post">
+    <button class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-outline-secondary ms-2">Hủy</a>
+</form>

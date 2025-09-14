@@ -26,6 +26,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <partial name="_LoginPartial" />
                     </ul>
                 </div>
             </div>
@@ -45,6 +46,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <partial name="_ValidationScriptsPartial" />
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

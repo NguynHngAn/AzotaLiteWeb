@@ -1,0 +1,645 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AzoteLiteWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\controllers\\submissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\controllers\\submissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\submissions\\do.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\submissions\\do.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\exams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\exams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\exams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\exams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\exams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\exams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\exams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\exams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\exams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\exams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\examquestions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\examquestions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\examquestions\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\examquestions\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\examquestions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\examquestions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\examquestions\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\examquestions\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\classrooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\classrooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\classrooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\classrooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\classrooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\classrooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\classrooms\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\classrooms\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\views\\classrooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\views\\classrooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\viewmodels\\takeexamvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\viewmodels\\takeexamvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\viewmodels\\studentformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\viewmodels\\studentformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\viewmodels\\saveanswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\viewmodels\\saveanswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\viewmodels\\questionformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\viewmodels\\questionformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\viewmodels\\examformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\viewmodels\\examformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\viewmodels\\classroomformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\viewmodels\\classroomformvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\data\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\data\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\controllers\\examquestionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\controllers\\examquestionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\controllers\\classroomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\controllers\\classroomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\models\\questiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\models\\questiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|d:\\azoteliteweb\\azotalite.web\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5D089D0-CA8E-4034-B3CA-77C5D78CA530}|AzotaLite.Web\\AzotaLite.Web.csproj|solutionrelative:azotalite.web\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Program.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Program.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Program.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T13:35:07.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T13:15:49.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\ExamQuestions\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\ExamQuestions\\Edit.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\ExamQuestions\\Edit.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\ExamQuestions\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T11:27:26.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\ExamQuestions\\Index.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\ExamQuestions\\Index.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\ExamQuestions\\Index.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\ExamQuestions\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwCgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T11:26:32.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Details.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Exams\\Details.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Details.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Exams\\Details.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T11:30:01.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Exams\\Edit.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Edit.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Exams\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T10:36:52.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Submission.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Submission.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Models\\Submission.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Submission.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Models\\Submission.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAzwC4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:21:37.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SubmissionsController.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\SubmissionsController.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Controllers\\SubmissionsController.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\SubmissionsController.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Controllers\\SubmissionsController.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAQwOIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:25:32.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\ExamQuestions\\Delete.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\ExamQuestions\\Delete.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\ExamQuestions\\Delete.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\ExamQuestions\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T11:29:16.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\ExamQuestions\\Create.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\ExamQuestions\\Create.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\ExamQuestions\\Create.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\ExamQuestions\\Create.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T11:27:08.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Classrooms\\Index.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Index.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Classrooms\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T13:15:30.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Do.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Submissions\\Do.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Submissions\\Do.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Submissions\\Do.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Submissions\\Do.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T11:26:11.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Delete.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Exams\\Delete.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Delete.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Exams\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T13:15:40.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Index.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Exams\\Index.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Index.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Exams\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T10:43:07.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Classrooms\\Edit.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Edit.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Classrooms\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T13:15:28.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Details.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Classrooms\\Details.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Details.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Classrooms\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T13:15:27.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Delete.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Classrooms\\Delete.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Delete.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Classrooms\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T13:15:25.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Create.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Exams\\Create.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Exams\\Create.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Exams\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T13:06:38.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Create.cshtml",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Views\\Classrooms\\Create.cshtml",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Views\\Classrooms\\Create.cshtml",
+              "RelativeToolTip": "AzotaLite.Web\\Views\\Classrooms\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T13:15:23.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ExamFormVM.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\ExamFormVM.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\ViewModels\\ExamFormVM.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\ExamFormVM.cs",
+              "RelativeToolTip": "AzotaLite.Web\\ViewModels\\ExamFormVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T13:14:37.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ClassroomFormVM.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\ClassroomFormVM.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\ViewModels\\ClassroomFormVM.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\ClassroomFormVM.cs",
+              "RelativeToolTip": "AzotaLite.Web\\ViewModels\\ClassroomFormVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T13:06:23.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IdentitySeeder.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Data\\IdentitySeeder.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Data\\IdentitySeeder.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Data\\IdentitySeeder.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Data\\IdentitySeeder.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwA0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T13:15:04.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QuestionFormVM.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\QuestionFormVM.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\ViewModels\\QuestionFormVM.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\QuestionFormVM.cs",
+              "RelativeToolTip": "AzotaLite.Web\\ViewModels\\QuestionFormVM.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:24:29.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SaveAnswerDto.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\SaveAnswerDto.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\ViewModels\\SaveAnswerDto.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\SaveAnswerDto.cs",
+              "RelativeToolTip": "AzotaLite.Web\\ViewModels\\SaveAnswerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:44:57.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StudentFormVM.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\StudentFormVM.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\ViewModels\\StudentFormVM.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\StudentFormVM.cs",
+              "RelativeToolTip": "AzotaLite.Web\\ViewModels\\StudentFormVM.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T13:05:53.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TakeExamVM.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\TakeExamVM.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\ViewModels\\TakeExamVM.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\ViewModels\\TakeExamVM.cs",
+              "RelativeToolTip": "AzotaLite.Web\\ViewModels\\TakeExamVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:44:31.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T13:14:51.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ExamsController.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\ExamsController.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Controllers\\ExamsController.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\ExamsController.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Controllers\\ExamsController.cs",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAQwPkAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T10:37:01.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ExamQuestionsController.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\ExamQuestionsController.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Controllers\\ExamQuestionsController.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\ExamQuestionsController.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Controllers\\ExamQuestionsController.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAQwMsAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:24:57.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ClassroomsController.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\ClassroomsController.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Controllers\\ClassroomsController.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\ClassroomsController.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Controllers\\ClassroomsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:45:13.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAQwGIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:21:55.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T12:18:11.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "QuestionType.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\QuestionType.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Models\\QuestionType.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\QuestionType.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Models\\QuestionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:20:47.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Models\\Question.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Question.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Models\\Question.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T11:21:22.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Exam.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Exam.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Models\\Exam.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Exam.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Models\\Exam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T12:06:47.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Classroom.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Classroom.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Models\\Classroom.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Classroom.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Models\\Classroom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T13:14:11.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T12:37:49.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "AzotaLite.Web\\Models\\Student.cs",
+              "ToolTip": "D:\\AzoteLiteWeb\\AzotaLite.Web\\Models\\Student.cs",
+              "RelativeToolTip": "AzotaLite.Web\\Models\\Student.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T12:47:46.056Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

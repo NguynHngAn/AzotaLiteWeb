@@ -1,0 +1,6 @@
+﻿@model AzotaLite.Web.Models.Classroom
+<h3>Xác nhận xóa lớp: @Model.Name (@Model.Grade)</h3>
+<form asp-action="Delete" method="post">
+    <button class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-outline-secondary ms-2">Hủy</a>
+</form>

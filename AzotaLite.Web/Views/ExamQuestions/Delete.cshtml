@@ -1,0 +1,6 @@
+﻿@model AzotaLite.Web.Models.Question
+<h3>Bạn chắc chắn muốn xóa câu hỏi: @Model.Text</h3>
+<form asp-action="Delete" method="post">
+    <button class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" asp-route-examId="@Model.ExamId" class="btn btn-outline-secondary ms-2">Hủy</a>
+</form>

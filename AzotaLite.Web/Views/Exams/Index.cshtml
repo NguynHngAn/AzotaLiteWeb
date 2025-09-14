@@ -1,0 +1,41 @@
+﻿@model IEnumerable<AzotaLite.Web.Models.Exam>
+@{
+    ViewData["Title"] = "Exams";
+}
+<h2>Exams</h2>
+<p class="text-success">@TempData["Msg"]</p>
+
+<form method="get" class="mb-3">
+    <input class="form-control" name="q" value="@ViewBag.Query" placeholder="Tìm theo tiêu đề/môn..." />
+</form>
+
+<p><a asp-action="Create" class="btn btn-primary">Tạo đề</a></p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Tiêu đề</th>
+            <th>Môn</th>
+            <th>Thời lượng</th>
+            <th>Kích thước</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td><a asp-action="Details" asp-route-id="@e.Id">@e.Title</a></td>
+                <td>@e.Subject</td>
+                <td>@e.DurationMinutes' </td>
+                <td>@(Math.Round(e.FileSize / 1024.0, 1)) KB</td>
+                <td class="text-end">
+                    <a asp-action="Edit" asp-route-id="@e.Id" class="btn btn-sm btn-warning">Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@e.Id" class="btn btn-sm btn-danger">Xóa</a>
+                    <a asp-action="Download" asp-route-id="@e.Id" class="btn btn-sm btn-secondary">Tải file</a>
+                    <a asp-controller="ExamQuestions" asp-action="Index" asp-route-examId="@e.Id" class="btn btn-sm btn-info">Câu hỏi</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

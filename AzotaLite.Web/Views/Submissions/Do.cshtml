@@ -1,0 +1,204 @@
+﻿@model AzotaLite.Web.ViewModels.TakeExamVM
+@using Microsoft.AspNetCore.Antiforgery
+@inject IAntiforgery Anti
+
+@{
+    ViewData["Title"] = "Làm bài: " + Model.ExamTitle;
+    var anti = Anti.GetAndStoreTokens(Context); // ✅ dùng Context thay vì HttpContext
+    var json = System.Text.Json.JsonSerializer.Serialize(Model);
+}
+
+<h2>@ViewData["Title"]</h2>
+@if (Model.IsSubmitted)
+{
+    <div class="alert alert-info">Bài này đã nộp trước đó. Bạn chỉ xem được nội dung.</div>
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <strong>Thời lượng:</strong> @Model.DurationMinutes' &nbsp; | &nbsp;
+        <strong>Bắt đầu (UTC):</strong> @Model.StartedAtUtc
+    </div>
+    <div>
+        <span class="badge bg-dark">Còn lại: <span id="countdown">--:--</span></span>
+    </div>
+</div>
+
+<div id="app"
+     data-model='@Html.Raw(json)'
+     data-token="@anti.RequestToken">
+</div>
+
+<hr />
+<div class="d-flex justify-content-between mt-3">
+    <button id="btnPrev" class="btn btn-outline-secondary">◀ Trước</button>
+    <div>
+        <button id="btnSave" class="btn btn-secondary me-2">Lưu tạm</button>
+        <button id="btnSubmit" class="btn btn-primary">Nộp bài</button>
+    </div>
+    <button id="btnNext" class="btn btn-outline-secondary">Tiếp ▶</button>
+</div>
+
+@section Scripts {
+    <script>
+        (() => {
+          const root = document.getElementById('app');
+          const data = JSON.parse(root.dataset.model);
+          const token = root.dataset.token;
+
+          const submissionId = data.SubmissionId;
+          const endAt = new Date(data.EndAtUtc + 'Z').getTime(); // UTC
+          const questions = data.Questions.sort((a,b)=>a.Order-b.Order);
+          const existing = data.ExistingAnswers || {};
+          const isSubmitted = data.IsSubmitted;
+
+          const KEY = `submission:${submissionId}`;
+          const AUTOSAVE_MS = 5000;
+
+          let idx = 0;
+          let draft = loadDraft();
+
+          const countdownEl = document.getElementById('countdown');
+          const btnPrev = document.getElementById('btnPrev');
+          const btnNext = document.getElementById('btnNext');
+          const btnSave = document.getElementById('btnSave');
+          const btnSubmit = document.getElementById('btnSubmit');
+
+          function renderQuestion() {
+            const q = questions[idx];
+            const saved = draft[q.Id] ?? existing[q.Id] ?? { ChoiceId: null, TextAnswer: "" };
+
+            let html = `<div class="card"><div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <div><span class="badge bg-info">Câu ${idx+1}/${questions.length}</span></div>
+                </div>
+                <h5 class="mb-3">${escapeHtml(q.Text)}</h5>`;
+
+            if (q.Type === 1) { // MultipleChoice
+              html += `<div>`;
+              q.Choices.forEach(c => {
+                const checked = (saved.ChoiceId === c.Id) ? 'checked' : '';
+                html += `
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="radio" name="choice" id="c_${c.Id}" value="${c.Id}" ${checked} />
+                    <label class="form-check-label" for="c_${c.Id}">${escapeHtml(c.Text)}</label>
+                  </div>`;
+              });
+              html += `</div>`;
+            } else {
+              html += `
+                <div class="mb-2">
+                  <textarea id="txtAnswer" rows="4" class="form-control" placeholder="Nhập câu trả lời...">${saved.TextAnswer ?? ""}</textarea>
+                </div>`;
+            }
+
+            html += `</div></div>`;
+            root.innerHTML = html;
+
+            btnPrev.disabled = (idx === 0);
+            btnNext.disabled = (idx === questions.length - 1);
+          }
+
+          function getCurrentAnswer() {
+            const q = questions[idx];
+            if (q.Type === 1) {
+              const chosen = document.querySelector('input[name="choice"]:checked');
+              return { QuestionId: q.Id, ChoiceId: chosen ? parseInt(chosen.value) : null, TextAnswer: null };
+            } else {
+              const val = document.getElementById('txtAnswer').value ?? '';
+              return { QuestionId: q.Id, ChoiceId: null, TextAnswer: val };
+            }
+          }
+
+          async function saveAnswer(ans, showToast=false) {
+            draft[ans.QuestionId] = { ChoiceId: ans.ChoiceId, TextAnswer: ans.TextAnswer };
+            persistDraft();
+
+            if (isSubmitted) return;
+
+            try {
+              const res = await fetch(`/submissions/${submissionId}/answers`, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'RequestVerificationToken': token
+                },
+                body: JSON.stringify(ans)
+              });
+              if (!res.ok) throw new Error(await res.text());
+              if (showToast) console.log('Đã lưu');
+            } catch (e) {
+              console.warn('Lưu server thất bại (sẽ sync lại):', e);
+            }
+          }
+
+          async function finalize() {
+            if (isSubmitted) return;
+            try {
+              await saveAnswer(getCurrentAnswer());
+
+              const res = await fetch(`/submissions/${submissionId}/finalize`, {
+                method: 'POST',
+                headers: { 'RequestVerificationToken': token }
+              });
+              if (!res.ok) throw new Error(await res.text());
+
+              localStorage.removeItem(KEY);
+              alert('Đã nộp bài!');
+              window.location.href = '/';
+            } catch (e) {
+              alert('Nộp bài thất bại: ' + e);
+            }
+          }
+
+          btnPrev.addEventListener('click', async () => {
+            await saveAnswer(getCurrentAnswer());
+            if (idx > 0) idx--;
+            renderQuestion();
+          });
+          btnNext.addEventListener('click', async () => {
+            await saveAnswer(getCurrentAnswer());
+            if (idx < questions.length - 1) idx++;
+            renderQuestion();
+          });
+          btnSave.addEventListener('click', async () => {
+            await saveAnswer(getCurrentAnswer(), true);
+            alert('Đã lưu tạm.');
+          });
+          btnSubmit.addEventListener('click', async () => {
+            if (confirm('Bạn chắc chắn muốn nộp bài?')) await finalize();
+          });
+
+          const tick = () => {
+            const now = Date.now();
+            let left = Math.floor((endAt - now) / 1000);
+            if (left < 0) left = 0;
+            const mm = String(Math.floor(left / 60)).padStart(2,'0');
+            const ss = String(left % 60).padStart(2,'0');
+            countdownEl.textContent = `${mm}:${ss}`;
+            if (left === 0) {
+              clearInterval(tmr);
+              finalize();
+            }
+          };
+          const tmr = setInterval(tick, 1000);
+          tick();
+
+          const autosave = async () => { await saveAnswer(getCurrentAnswer()); };
+          const autosaveTmr = setInterval(autosave, 5000);
+          document.addEventListener('visibilitychange', () => { if (document.hidden) autosave(); });
+          window.addEventListener('beforeunload', () => { persistDraft(); });
+
+          function persistDraft() {
+            try { localStorage.setItem(KEY, JSON.stringify(draft)); } catch {}
+          }
+          function loadDraft() {
+            try { const s = localStorage.getItem(KEY); return s ? JSON.parse(s) : {}; } catch { return {}; }
+          }
+
+          function escapeHtml(s){ return (s??'').replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])); }
+
+          renderQuestion();
+        })();
+    </script>
+}

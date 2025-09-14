@@ -1,0 +1,55 @@
+﻿@model AzotaLite.Web.ViewModels.QuestionFormVM
+@{
+    ViewData["Title"] = "Thêm câu hỏi";
+}
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="ExamId" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Order" class="form-label"></label>
+        <input asp-for="Order" class="form-control" />
+        <span asp-validation-for="Order" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Text" class="form-label"></label>
+        <textarea asp-for="Text" rows="3" class="form-control"></textarea>
+        <span asp-validation-for="Text" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Type" class="form-label"></label>
+        <select asp-for="Type" class="form-select"
+                asp-items="Html.GetEnumSelectList<AzotaLite.Web.Models.QuestionType>()"></select>
+        <span asp-validation-for="Type" class="text-danger"></span>
+    </div>
+
+    <fieldset class="mb-3">
+        <legend>Choices (MCQ)</legend>
+        @for (int i = 0; i < Model.Choices.Count; i++)
+        {
+            <div class="row g-2 align-items-center mb-2">
+                <div class="col-10">
+                    <input asp-for="Choices[@i].Text" class="form-control" placeholder="Lựa chọn @(@i + 1)" />
+                </div>
+                <div class="col-2 form-check">
+                    <input class="form-check-input" asp-for="Choices[@i].IsCorrect" />
+                    <label class="form-check-label">Đúng</label>
+                </div>
+            </div>
+        }
+    </fieldset>
+
+    <button class="btn btn-success" type="submit">Lưu</button>
+    <a asp-action="Index" asp-route-examId="@Model.ExamId" class="btn btn-outline-secondary ms-2">Hủy</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

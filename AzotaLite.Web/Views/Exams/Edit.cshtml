@@ -1,0 +1,46 @@
+﻿@model AzotaLite.Web.ViewModels.ExamFormVM
+@{
+    ViewData["Title"] = "Sửa đề";
+}
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit"
+      asp-route-id="@Model.Id"
+      method="post"
+      enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Subject" class="form-label"></label>
+        <input asp-for="Subject" class="form-control" />
+        <span asp-validation-for="Subject" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DurationMinutes" class="form-label"></label>
+        <input asp-for="DurationMinutes" class="form-control" />
+        <span asp-validation-for="DurationMinutes" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tệp đề mới (tùy chọn) – chỉ PDF/DOCX</label>
+        <input asp-for="ExamFile" type="file" class="form-control" />
+        <span asp-validation-for="ExamFile" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-success" type="submit">Lưu</button>
+    <a asp-action="Index" class="btn btn-outline-secondary ms-2">Hủy</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

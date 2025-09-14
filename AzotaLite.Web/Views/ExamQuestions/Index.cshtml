@@ -1,0 +1,50 @@
+﻿@model IEnumerable<AzotaLite.Web.Models.Question>
+@{
+    var exam = (AzotaLite.Web.Models.Exam)ViewBag.Exam;
+    ViewData["Title"] = "Câu hỏi: " + exam.Title;
+}
+<h2>@ViewData["Title"]</h2>
+<p class="text-success">@TempData["Msg"]</p>
+
+<p>
+    <a asp-action="Create" asp-route-examId="@exam.Id" class="btn btn-primary">Thêm câu hỏi</a>
+</p>
+
+<form asp-action="SeedDemo" method="post" class="mb-3">
+    <input type="hidden" name="examId" value="@exam.Id" />
+    <button class="btn btn-outline-secondary" type="submit">Seed 20 câu demo</button>
+</form>
+
+<table class="table table-striped">
+    <thead><tr><th>#</th><th>Nội dung</th><th>Loại</th><th>Đáp án</th><th></th></tr></thead>
+    <tbody>
+        @foreach (var q in Model)
+        {
+            <tr>
+                <td>@q.Order</td>
+                <td>@q.Text</td>
+                <td>@q.Type</td>
+                <td>
+                    @if (q.Choices?.Any() == true)
+                    {
+                        <ul class="mb-0">
+                            @foreach (var c in q.Choices)
+                            {
+                                <li>@c.Text @if(c.IsCorrect){
+                                <strong>(Đúng)</strong>
+                            }
+        </li>
+                        }
+                    </ul>
+                }
+            </td>
+            <td class="text-end">
+                <a asp-action="Edit" asp-route-id="@q.Id" class="btn btn-sm btn-warning">Sửa</a>
+                <a asp-action="Delete" asp-route-id="@q.Id" class="btn btn-sm btn-danger">Xóa</a>
+            </td>
+        </tr>
+                }
+    </tbody>
+</table>
+
+<p><a asp-controller="Exams" asp-action="Index" class="btn btn-outline-secondary">Về danh sách đề</a></p>
